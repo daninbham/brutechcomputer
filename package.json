@@ -2,7 +2,7 @@
   "name": "BRU Tech Computer",
   "version": "beta",
   "scripts": {
-    "build": "pug templates -o deploy"
+    "build": "cp -r assets/ deploy/assets/ & pug templates -o deploy"
   },
   "dependencies": {
     "pug": "^3.0.2",
