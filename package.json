@@ -2,9 +2,9 @@
   "name": "BRU Tech Computer",
   "version": "beta",
   "scripts": {
-    "build": "pug index.pug -o deploy && npm run copy:assets",
+    "build": "pug src/index.pug -o deploy && npm run copy:assets",
     "copy:assets": "mkdir -p deploy/assets && cp -r assets/ deploy/",
-    "local:build": "pug index.pug -o deploy && npm run local:copy:assets",
+    "local:build": "pug src/index.pug -o deploy && npm run local:copy:assets",
     "local:copy:assets": "mkdir -p deploy/assets && cp -r assets/ deploy/assets/"
   },
   "dependencies": {
