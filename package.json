@@ -3,9 +3,9 @@
   "version": "beta",
   "scripts": {
     "build": "pug src/index.pug -o deploy && npm run copy:assets",
-    "copy:assets": "mkdir -p deploy/assets && cp -r assets/ deploy/",
+    "copy:assets": "mkdir -p deploy/assets && cp -r src/assets/ deploy/",
     "local:build": "pug src/index.pug -o deploy && npm run local:copy:assets",
-    "local:copy:assets": "mkdir -p deploy/assets && cp -r assets/ deploy/assets/"
+    "local:copy:assets": "mkdir -p deploy/assets && cp -r src/assets/ deploy/assets/"
   },
   "dependencies": {
     "pug": "^3.0.2",
