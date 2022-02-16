@@ -2,7 +2,8 @@
   "name": "BRU Tech Computer",
   "version": "beta",
   "scripts": {
-    "build": "cp -r assets/ deploy/assets/ & pug templates -o deploy"
+    "build": "pug templates -o deploy && npm run copy:assets",
+    "copy:assets": "mkdir -p deploy/assets && cp -r assets/ deploy/assets/"
   },
   "dependencies": {
     "pug": "^3.0.2",
