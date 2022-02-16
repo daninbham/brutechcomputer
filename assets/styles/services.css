@@ -1,0 +1,24 @@
+.card-service {
+    max-width: 540px;
+    box-shadow: 4px 4px 2px lightgray;
+}
+
+.card-content-left {
+    height: inherit;
+    margin: 16px 0;
+    border-left: solid 3px #0404fc;
+}
+
+.card-content-right {
+    height: inherit;
+    margin: 16px 0;
+    border-right: solid 3px #0404fc;
+}
+
+.card-title-green {
+    color: #04bc04;
+}
+
+.card-icon-blue {
+    color: #0404fc;
+}
