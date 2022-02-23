@@ -5,7 +5,9 @@
     "build": "pug src/index.pug -o deploy && npm run copy:assets",
     "copy:assets": "mkdir -p deploy/assets && cp -r src/assets/ deploy/",
     "local:build": "pug src/index.pug -o deploy && npm run local:copy:assets",
-    "local:copy:assets": "mkdir -p deploy/assets && cp -r src/assets/ deploy/assets/"
+    "local:copy:assets": "mkdir -p deploy/assets && cp -r src/assets/ deploy/assets",
+    "local:winbuild": "pug src/index.pug -o deploy && npm run local:wincopy",
+    "local:wincopy" : "xcopy /e /y src\\assets\\ deploy\\"
   },
   "dependencies": {
     "pug": "^3.0.2",
