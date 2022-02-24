@@ -6,15 +6,17 @@ nav#myNavbar.navbar.navbar-expand-lg.navbar-light.border-bottom.fixed-top(style=
         height="50px"
       )
     ul.navbar-nav.nav-pills
-        li.nav-item
-          if name.toLowerCase() === "about"
+        if name.toLowerCase() !== "home"
+          li.nav-item
             a.nav-link(href="index.html") Home
-          else if name.toLowerCase() === "main"
+        li.nav-item
+          a.nav-link(href="index.html#services") Services
+        if name.toLowerCase() !== "about"
+          li.nav-item
             a.nav-link(href="about.html") About
-        li.nav-item
-          a.nav-link(href="#services") Services
-        li.nav-item
-          a.nav-link(href="#") Contact
+        if name.toLowerCase() !== "contact"
+          li.nav-item
+            a.nav-link(href="contact.html") Contact
     //- button.navbar-toggler(
     //-   type="button"
     //-   data-bs-toggle="collapse"

@@ -6,12 +6,14 @@ container
         img(src="assets/images/BT_Logo.png" height="50px")
 
     ul.nav.col-md-4.justify-content-end
-      li.nav-item
-        if name.toLowerCase() === "about"
+      if name.toLowerCase() !== "home"
+        li.nav-item
           a.nav-link.px-2.text-muted(href="index.html") Home
-        else if name.toLowerCase() === "main"
+      li.nav-item
+        a.nav-link.px-2.text-muted(href="index.html#services") Services
+      if name.toLowerCase() !== "about"
+        li.nav-item
           a.nav-link.px-2.text-muted(href="about.html") About
-      li.nav-item
-        a.nav-link.px-2.text-muted(href="#services") Services
-      li.nav-item
-        a.nav-link.px-2.text-muted(href="#") Contact
+      if name.toLowerCase() !== "contact"
+        li.nav-item
+          a.nav-link.px-2.text-muted(href="contact.html") Contact
