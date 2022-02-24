@@ -1,6 +1,11 @@
 .card-service {
-    max-width: 540px;
+    max-width: 650px;
     box-shadow: 4px 4px 2px lightgray;
+}
+
+.card-service img {
+    max-height: 140px;
+    max-width: 140px;
 }
 
 .card-content-left {
