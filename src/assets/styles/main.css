@@ -33,3 +33,11 @@ html {
   background-color: #0404fc;
   color: white;
 }
+
+.text-about {
+  max-width: 1000px;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  color: #04bc04;
+}
