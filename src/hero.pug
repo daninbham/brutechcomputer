@@ -3,6 +3,9 @@ container
     img.d-block.mx-auto.mb-4(src="assets/images/BruTech_Logo.png" alt="BruTech Computer logo")
     div.col-lg-6.mx-auto.my-5
       div.d-grid.gap-2.d-sm-flex.justify-content-sm-center
-        a.btn.btn-primary.btn-lg.px-4.gap-3(type="button" href="about.html") About
+        if name.toLowerCase() === "about"
+          a.btn.btn-primary.btn-lg.px-4.gap-3(type="button" href="index.html") Home
+        else if name.toLowerCase() === "main"
+          a.btn.btn-primary.btn-lg.px-4.gap-3(type="button" href="about.html") About
         a.btn.btn-primary.btn-lg.px-4.gap-3(type="button" href="#services") Services
         a.btn.btn-outline-primary.btn-lg.px-4(type="button") Contacts

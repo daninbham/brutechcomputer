@@ -7,7 +7,10 @@ container
 
     ul.nav.col-md-4.justify-content-end
       li.nav-item
-        a.nav-link.px-2.text-muted(href="about.html") About
+        if name.toLowerCase() === "about"
+          a.nav-link.px-2.text-muted(href="index.html") Home
+        else if name.toLowerCase() === "main"
+          a.nav-link.px-2.text-muted(href="about.html") About
       li.nav-item
         a.nav-link.px-2.text-muted(href="#services") Services
       li.nav-item
