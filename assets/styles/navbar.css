@@ -16,13 +16,3 @@
 .navbar-light .navbar-nav .show > .nav-link {
   color: white;
 }
-
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  background-color: #04bc04;
-}
-
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .show > .nav-link {
-  color: white;
-}
