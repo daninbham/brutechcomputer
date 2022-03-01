@@ -1,7 +1,7 @@
 doctype html
 html(lang='en')
   head
-    - var name = 'Home'
+    - var name = "Contact"
     title BruTech Computer
     link(rel="icon" type="image/x-icon" href="assets/images/favicon.ico")
     link(
@@ -16,7 +16,18 @@ html(lang='en')
     script(src="https://kit.fontawesome.com/83100d2143.js" crossorigin="anonymous")
     script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous")
   body.background-graphic(data-bs-spy="scroll" data-bs-target="#myNavbar" data-bs-offset="0" tabindex="0")
+    form
+      div.px-4.pt-5.pb-0.my-5.text-center.card-icon-blue
+        h1 Contact Us
+      div.px-4.pt-0.text-center
+        input(id="custname" type="text" placeholder="Your Name" size="60%" required)
+      div.px-4.pt-3.text-center
+        input(id="email" type="email" placeholder="Your Email Address" size="60%" required)
+      div.px-4.pt-3.text-center
+        textarea(id="message" placeholder="Leave a Message" rows="10" cols="100" required)
+      div.px-4.pt-3.text-center
+        a.btn.btn-primary.btn-lg.px-4.gap-3(type="submit") Send Message
+
     include navbar.pug
-    include hero.pug
-    include services.pug
     include footer.pug
+    
