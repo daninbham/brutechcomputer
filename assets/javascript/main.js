@@ -16,3 +16,8 @@ window.onscroll = () => {
     }
   });
 };
+
+export function sendMail(req, res) {
+  let message = req.query.message || req.body.message || 'BruTech Contact Request';
+  res.status(200).send(message);
+}
