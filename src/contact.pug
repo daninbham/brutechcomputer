@@ -21,6 +21,7 @@ html(lang='en')
         img(src="assets/images/ContactMail.png" height="100px")
         h1 Contact Us
       form
+        //- (action="https://us-central1-brutechcomputer-contact-form.cloudfunctions.net/contact-form" method="post")
         div.px-4.pt-0.text-center
           input(id="custname" type="text" placeholder="Your Name" size="60%" required)
         div.px-4.pt-3.text-center
@@ -28,7 +29,7 @@ html(lang='en')
         div.px-4.pt-3.text-center
           textarea(id="message" placeholder="Leave a Message" rows="10" cols="100" required)
         div.px-4.pt-3.text-center
-          a.btn.btn-primary.btn-lg.px-4.gap-3(type="submit") Send Message
+          a.btn.btn-primary.btn-lg.px-4.gap-3(type="submit" href="") Send Message
 
     include navbar.pug
     include footer.pug
