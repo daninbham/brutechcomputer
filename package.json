@@ -9,7 +9,7 @@
     "local:winbuild": "pug src/index.pug -o deploy && pug src/about.pug -o deploy && pug src/contact.pug -o deploy && xcopy /e /y src\\assets\\ deploy\\assets\\"
   },
   "dependencies": {
-    "pug": "^3.0.2",
+    "pug": "^3.0.3",
     "pug-cli": "^1.0.0-alpha6"
   }
 }
