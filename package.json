@@ -2,11 +2,11 @@
   "name": "BruTech Computer",
   "version": "beta",
   "scripts": {
-    "build": "pug src/index.pug -o deploy && pug src/about.pug -o deploy && pug src/contact.pug -o deploy && npm run copy:assets",
+    "build": "pug src/index.pug -o deploy && npm run copy:assets",
     "copy:assets": "mkdir -p deploy/assets && cp -r src/assets/ deploy/",
-    "local:build": "pug src/index.pug -o deploy && pug src/index.pug -o deploy && pug src/contact.pug -o deploy && npm run local:copy:assets",
+    "local:build": "pug src/index.pug -o deploy && npm run local:copy:assets",
     "local:copy:assets": "mkdir -p deploy/assets && cp -r src/assets/ deploy/assets",
-    "local:winbuild": "pug src/index.pug -o deploy && pug src/about.pug -o deploy && pug src/contact.pug -o deploy && xcopy /e /y src\\assets\\ deploy\\assets\\"
+    "local:winbuild": "pug src/index.pug -o deploy && xcopy /e /y src\\assets\\ deploy\\assets\\"
   },
   "dependencies": {
     "pug": "^3.0.2",
