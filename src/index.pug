@@ -2,154 +2,125 @@ doctype html
 html(lang='en')
   head
     - var name = 'Home'
-    title BruTech Computer
+    title BruTech Computer - Test
     link(rel="icon" type="image/x-icon" href="assets/images/favicon.ico")
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     link(rel="stylesheet", href="assets/styles/main.css")
     link(rel="stylesheet", href="assets/styles/navbar.css")
     link(rel="stylesheet", href="assets/styles/services.css")
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     script(src="https://kit.fontawesome.com/83100d2143.js" crossorigin="anonymous")
     body.background-graphic(data-bs-spy="scroll" data-bs-target="#myNavbar" data-bs-offset="0" tabindex="0")
-    nav#myNavbar.navbar.navbar-expand-lg.border-bottom.fixed-top(style="background-color: #bdccfc;")
-    div.container
-      a.navbar-brand(href="index.html")
-        img(
-          src="assets/images/BT_Logo.png"
-          height="50px"
-        )
-      ul.navbar-nav.nav-pills
-          li.nav-item
-            a.nav-link(href="index.html") Home
-          li.nav-item
-            a.nav-link(href="index.html#services") Services
-          if name.toLowerCase() !== "about"
-            li.nav-item
-              a.nav-link(href="index.html#about") About
-          //- if name.toLowerCase() !== "contact"
-          //-   li.nav-item
-          //-     a.nav-link(href="contact.html") Contact
-          
-      //- button.navbar-toggler(
-      //-   type="button"
-      //-   data-bs-toggle="collapse"
-      //-   data-bs-target="#navbarNav"
-      //-   aria-controls="navbarNav"
-      //-   aria-expanded="false"
-      //-   aria-label="Toggle navigation"
-      //- )
-      //-   span.navbar-toggler-icon
-      //- div.collapse.navbar-collapse.justify-content-end#navbarNav
-      //-   ul.navbar-nav.nav-pills
-      //-     li.nav-item
-      //-       a.nav-link(href="#") About
-      //-     li.nav-item
-      //-       a.nav-link(href="#services") Services
-      //-     li.nav-item
-      //-       a.nav-link(href="#") Contact
-
-    container
-      div.px-4.py-5.my-5.text-center
-        img.d-block.mx-auto.mb-0.pb-0(src="assets/images/BruTech_Logo.png" alt="BruTech Computer logo")
-        div.col-lg-6.mx-auto.my-5.pt-0.mt-0
-          h3.pt-0.pb-3 (682) 498-3377
-          div.d-grid.gap-2.d-sm-flex.justify-content-sm-center
-            if name.toLowerCase() !== "home"
-              a.btn.btn-primary.btn-lg.px-4.gap-3(type="button" href="index.html") Home
-            a.btn.btn-primary.btn-lg.px-4.gap-3(type="button" href="index.html#services") Services
-            if name.toLowerCase() !== "about"
+      nav#myNavbar.navbar.navbar-expand-lg.border-bottom.fixed-top(style="background-color: #bdccfc;")
+        div.container
+          a.navbar-brand(href="index.html")
+            img(
+              src="assets/images/BT_Logo.png"
+              height="50px"
+            )
+          ul.navbar-nav.nav-pills
+              li.nav-item
+                a.nav-link(href="index.html#home") Home
+              li.nav-item
+                a.nav-link(href="index.html#services") Services
+              li.nav-item
+                a.nav-link(href="index.html#about") About
+            
+      container#home
+        div.px-4.py-5.my-5.text-center
+          img.d-block.mx-auto.mb-0.pb-0(src="assets/images/BruTech_Logo.png" alt="BruTech Computer logo")
+          div.col-lg-6.mx-auto.my-5.pt-0.mt-0
+            h3.pt-0.pb-3 (682) 498-3377
+            div.d-grid.gap-2.d-sm-flex.justify-content-sm-center
+              a.btn.btn-primary.btn-lg.px-4.gap-3(type="button" href="index.html%home") Home
+              a.btn.btn-primary.btn-lg.px-4.gap-3(type="button" href="index.html#services") Services
               a.btn.btn-primary.btn-lg.px-4.gap-3(type="button" href="index.html#about") About
-            //- if name.toLowerCase() !== "contact"
-            //-   a.btn.btn-primary.btn-lg.px-4(type="button" href="contact.html") Contact
 
-    container#services
-      div.container
+      container#services
+        div.container
 
-        h2.card-icon-blue Services
-        hr
+          h2.card-icon-blue Services
+          hr
 
-        div.card.mb-3.card-service
-          div.row.g-0
-            div.col-md-4.text-center.align-items-center.py-5.px-4
-                img(src="assets/images/PC_Tune_Up_Image.jpg" alt="")
-            div.col-md-8.card-content-left
-              div.card-body
-                h5.card-title.card-title-green PC Tune Up
-                ul.card-text
-                  li Is your computer safe?
-                  li Do you have malware stealing your information?
-                  li Is your computer up to date?
-                  li Are you running efficiently?
+          div.card.mb-3.card-service
+            div.row.g-0
+              div.col-md-4.text-center.align-items-center.py-5.px-4
+                  img(src="assets/images/PC_Tune_Up_Image.jpg" alt="")
+              div.col-md-8.card-content-left
+                div.card-body
+                  h5.card-title.card-title-green PC Tune Up
+                  ul.card-text
+                    li Is your computer safe?
+                    li Do you have malware stealing your information?
+                    li Is your computer up to date?
+                    li Are you running efficiently?
 
-        div.card.mb-3.me-0.ms-auto.card-service
-          div.row.g-0
-            div.col-md-8.card-content-right
-              div.card-body
-                h5.card-title.card-title-green Diagnostics
-                ul.card-text 
-                  li Something not working right?
-                  li Computer running slow?
-                  li Computer not turning off or on?
-            div.col-md-4.text-center.align-items-center.py-5.px-4
-                img(src="assets/images/PC_Diagnostics_Image.jpg" alt="")
+          div.card.mb-3.me-0.ms-auto.card-service
+            div.row.g-0
+              div.col-md-8.card-content-right
+                div.card-body
+                  h5.card-title.card-title-green Diagnostics
+                  ul.card-text 
+                    li Something not working right?
+                    li Computer running slow?
+                    li Computer not turning off or on?
+              div.col-md-4.text-center.align-items-center.py-5.px-4
+                  img(src="assets/images/PC_Diagnostics_Image.jpg" alt="")
 
-        div.card.mb-3.card-service
-          div.row.g-0
-            div.col-md-4.text-center.align-items-center.py-5.px-4
-                img(src="assets/images/PC_Upgrade_Image.jpg" alt="")
-            div.col-md-8.card-content-left
-              div.card-body
-                h5.card-title.card-title-green PC Upgrade
-                ul.card-text
-                  li Need more storage?
-                  li Additional memory?
-                  li New printer?
-                  li Home network?
+          div.card.mb-3.card-service
+            div.row.g-0
+              div.col-md-4.text-center.align-items-center.py-5.px-4
+                  img(src="assets/images/PC_Upgrade_Image.jpg" alt="")
+              div.col-md-8.card-content-left
+                div.card-body
+                  h5.card-title.card-title-green PC Upgrade
+                  ul.card-text
+                    li Need more storage?
+                    li Additional memory?
+                    li New printer?
+                    li Home network?
 
-        div.card.mb-3.me-0.ms-auto.card-service
-          div.row.g-0
-            div.col-md-8.card-content-right
-              div.card-body
-                h5.card-title.card-title-green Remote Support or Pick Up/Drop Off
-                ul.card-text
-                  li Need help from afar?
-                  li Don't want to leave your home for help?
-                  li Too busy?
-            div.col-md-4.text-center.align-items-center.py-5.px-4
-                img(src="assets/images/PC_Remote_Image.jpg" alt="")
+          div.card.mb-3.me-0.ms-auto.card-service
+            div.row.g-0
+              div.col-md-8.card-content-right
+                div.card-body
+                  h5.card-title.card-title-green Remote Support or Pick Up/Drop Off
+                  ul.card-text
+                    li Need help from afar?
+                    li Don't want to leave your home for help?
+                    li Too busy?
+              div.col-md-4.text-center.align-items-center.py-5.px-4
+                  img(src="assets/images/PC_Remote_Image.jpg" alt="")
 
-    container#about
-      div.px-4.pt-5.pb-0.my-5.text-center.card-icon-blue
-        h1 About BruTech Computer
-      div.pt-0.pb-2.text-about
-        h5
-          p.
-            I live in Pecan Plantation with my wife, Yvonne, and two small dogs.  When we are not remodeling the house, we are attempting to chisel away at our golf handicaps, so far with modest success.
-          p. 
-            I have worked on nearly everything in personal technology; computer hardware and software; programming; home networks; phone equipment; mobile; security systems; and home automation.
-          p.
-            I began my interests in computers and technology at the age of 15.  I started my first business while still in college pursuing a computer science degree.  After selling that business seven years later, I was hired as the lead Information Technology Technician at Western Washington University.  After 16 years, I moved on as the Information Technology Manager for a large Heavy Industrial Construction company.
-          p.
-            Now wanting to be closer to family, and better weather, I have once again started my own business.
-          p.
-            My goal is to use my 35 years of computer experience to assist my clients in all their technology needs.  I hope to help you enjoy technology as much as I do, or at least make yours work better.
+      container#about
+        div.px-4.pt-5.pb-0.my-5.text-center.card-icon-blue
+          h1 About BruTech Computer
+        div.pt-0.pb-2.text-about
+          h5
+            p.
+              I live in Pecan Plantation with my wife, Yvonne, and two small dogs.  When we are not remodeling the house, we are attempting to chisel away at our golf handicaps, so far with modest success.
+            p. 
+              I have worked on nearly everything in personal technology; computer hardware and software; programming; home networks; phone equipment; mobile; security systems; and home automation.
+            p.
+              I began my interests in computers and technology at the age of 15.  I started my first business while still in college pursuing a computer science degree.  After selling that business seven years later, I was hired as the lead Information Technology Technician at Western Washington University.  After 16 years, I moved on as the Information Technology Manager for a large Heavy Industrial Construction company.
+            p.
+              Now wanting to be closer to family, and better weather, I have once again started my own business.
+            p.
+              My goal is to use my 35 years of computer experience to assist my clients in all their technology needs.  I hope to help you enjoy technology as much as I do, or at least make yours work better.
 
-    container
-      footer.d-flex.flex-wrap.justify-content-between.align-items-center.py-3.my-4.border-top.container-fluid(style="background-color: #bdccfc;")
-        p.col-md-4.mb-0.text-muted © 2022-2024 BruTech Computer (Developed by Nick & Dan Brunner)
+      container#footer
+        footer.d-flex.flex-wrap.justify-content-between.align-items-center.py-3.my-4.border-top.container-fluid(style="background-color: #bdccfc;")
+          p.col-md-4.mb-0.text-muted © 2022-2024 BruTech Computer (Developed by Nick & Dan Brunner)
 
-        a.col-md-4.d-flex.align-items-center.justify-content-center.mb-3.mb-md-0.me-md-auto.link-light.text-decoration-none(href="index.html")
-            img(src="assets/images/BT_Logo.png" height="50px")
+          a.col-md-4.d-flex.align-items-center.justify-content-center.mb-3.mb-md-0.me-md-auto.link-light.text-decoration-none(href="index.html")
+              img(src="assets/images/BT_Logo.png" height="50px")
 
-        ul.nav.col-md-4.justify-content-end
-          li.nav-item
-            a.nav-link.px-2.text-muted(href="index.html") Home
-          li.nav-item
-            a.nav-link.px-2.text-muted(href="index.html#services") Services
-          if name.toLowerCase() !== "about"
+          ul.nav.col-md-4.justify-content-end
             li.nav-item
-              a.nav-link.px-2.text-muted(href="index.html#about") About
-          //- if name.toLowerCase() !== "contact"
-          //-   li.nav-item
-          //-     a.nav-link.px-2.text-muted(href="contact.html") Contact
+              a.nav-link.px-2.text-muted(href="index.html#home") Home
+            li.nav-item
+              a.nav-link.px-2.text-muted(href="index.html#services") Services
+            if name.toLowerCase() !== "about"
+              li.nav-item
+                a.nav-link.px-2.text-muted(href="index.html#about") About
 
