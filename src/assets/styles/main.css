@@ -12,24 +12,24 @@ html {
 }
 
 .btn-primary {
-  background-color: #0404fc;
-  border-color: #0404fc;
+  background-color: #0000ff;
+  border-color: #0000ff;
   width: 200px;
   height: 50px;
 }
 
 .btn-primary:hover {
   background-color: white;
-  color: #0404fc;
+  color: #0000ff;
 }
 
 .btn-outline-primary {
-  border-color: #0404fc;
-  color: #0404fc;
+  border-color: #0000ff;
+  color: #0000ff;
 }
 
 .btn-outline-primary:hover {
-  background-color: #0404fc;
+  background-color: #0000ff;
   color: white;
 }
 
@@ -38,6 +38,14 @@ html {
   width: 60%;
   padding: 10px;
   color: #000;
+}
+
+.text-green {
+  color: #00ba00;
+}
+
+.text-blue {
+  color: #0000ff;
 }
 
 .input {

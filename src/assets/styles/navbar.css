@@ -1,5 +1,5 @@
 .navbar-light .navbar-nav .nav-link {
-  color: #0404fc;
+  color: #0000ff;
   text-decoration: none;
 }
 
@@ -9,7 +9,7 @@
 
 .nav-pills .nav-link:active,
 .nav-pills .show > .nav-link {
-  background-color: #04bc04;
+  background-color: #00ba00;
 }
 
 .navbar-light .navbar-nav .nav-link:active,
