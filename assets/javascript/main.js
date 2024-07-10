@@ -6,7 +6,8 @@ window.onscroll = () => {
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
     if (pageYOffset >= sectionTop - 60) {
-      current = section.getAttribute("id"); }
+      current = section.getAttribute("id");
+    }
   });
 
   navLi.forEach((li) => {
@@ -18,6 +19,7 @@ window.onscroll = () => {
 };
 
 export function sendMail(req, res) {
-  let message = req.query.message || req.body.message || 'BruTech Contact Request';
+  let message =
+    req.query.message || req.body.message || "BruTech Contact Request";
   res.status(200).send(message);
 }
