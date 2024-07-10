@@ -11,6 +11,12 @@ html {
   height: 100vh;
 }
 
+.background-picture {
+  background-image: url("assets/images/PC_Tune_Up_Image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .btn-primary {
   background-color: #0000ff;
   border-color: #0000ff;
