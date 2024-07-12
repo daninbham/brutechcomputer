@@ -10,8 +10,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/styles/main.css" />
-    <link rel="stylesheet" href="assets/styles/navbar.css" />
     <link rel="stylesheet" href="assets/styles/services.css" />
+    <script src="assets/javascript/main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -23,56 +23,9 @@
     ></script>
   </head>
 
-  <body
-    class="background-graphic"
-    data-bs-spy="scroll"
-    data-bs-target="#myNavbar"
-    data-bs-offset="0"
-    tabindex="0"
-  >
-    <nav
-      class="navbar navbar-expand-lg border-bottom fixed-top"
-      id="myNavbar"
-      style="background-color: #bdccfc"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="index.html"
-          ><img src="assets/images/BT_Logo.png" height="50px"
-        /></a>
-        <ul class="navbar-nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#top">Top</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#about">About</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <container id="top">
-      <div class="py-5 my-5 text-center">
-        <!-- <marquee width="60%"
-        bgcolor="red"
-        font
-        style="bold"
-        scrolldelay="100">
-        <font size="5"
-          face="Verdana">
-          <font color="White">*** Computer running slow? We can fix it for much less than a new computer! ***
-      </marquee>
-      <marquee width="60%"
-        bgcolor="#00ba00"
-        font
-        style="bold"
-        scrolldelay="100">
-        <font size="5"
-          face="Verdana">
-          <font color="White">*** We will be closed Friday mm/dd thru Monday mm/dd. Please leave us a message and we
-            will get back to you as soon as we get back. ***
-      </marquee> -->
+  <body class="background-picture" tabindex="0">
+    <container id="top" class="pt-5 mt-5">
+      <div id="logo-overlay" class="container pt-5 pb-5 mt-5 mb-5 text-center">
         <img
           class="d-block mx-auto mb-0 pb-0"
           src="assets/images/BruTech_Logo.png"
@@ -80,7 +33,7 @@
         />
         <h3 class="px-0 py-0 pt-0 pb-3">For all your technology needs</h3>
         <div>
-          <table style="width: 100%" border="0">
+          <table style="width: 100% border=0">
             <tr>
               <td
                 class="px-3"
@@ -112,20 +65,19 @@
               </td>
             </tr>
           </table>
-          <!-- <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"><a class="btn btn-primary btn-lg px-4 gap-3"
-            type="button"
-            href="index.html%home">Home</a><a class="btn btn-primary btn-lg px-4 gap-3"
-            type="button"
-            href="index.html#services">Services</a><a class="btn btn-primary btn-lg px-4 gap-3"
-            type="button"
-            href="index.html#about">About</a></div> -->
+          <div onclick="scrollToTop()">
+            <i
+              class="arrow text-green fa-solid fa-angle-down py-0 my-0"
+              aria-hidden="true"
+            ></i>
+          </div>
         </div>
       </div>
     </container>
     <container id="services">
-      <div class="container">
+      <div id="services-overlay" class="container pt-3 mt-4 pb-5 mb-5">
         <h2 class="card-icon-blue">Services</h2>
-        <hr />
+        <br />
         <div class="card mb-3 card-service">
           <div class="row g-0">
             <div class="col-md-4 text-center align-items-center py-5 px-4">
@@ -201,21 +153,21 @@
       </div>
     </container>
     <container id="about">
-      <div class="container py-3 my-4">
+      <div id="about-overlay" class="container py-3 my-4">
         <h2 class="card-icon-blue">About BruTech Computer</h2>
-        <hr />
+        <br />
         <h5>
-          <p>
+          <p class="text-black">
             I live in Pecan Plantation with my wife, Yvonne, and two small dogs.
             When we are not remodeling the house, we are attempting to chisel
             away at our golf handicaps, so far with modest success.
           </p>
-          <p>
+          <p class="text-black">
             I have worked on nearly everything in personal technology; computer
             hardware and software; programming; home networks; phone equipment;
             mobile; security systems; and home automation.
           </p>
-          <p>
+          <p class="text-black">
             I began my interests in computers and technology at the age of 15. I
             started my first business while still in college pursuing a computer
             science degree. After selling that business seven years later, I was
@@ -224,7 +176,7 @@
             Technology Manager for a large Heavy Industrial Construction
             company.
           </p>
-          <p>
+          <p class="text-black">
             Now wanting to be closer to family, and better weather, I have once
             again started my own business.
           </p>
@@ -239,33 +191,15 @@
     </container>
     <container id="footer">
       <footer
-        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container-fluid"
-        style="background-color: #bdccfc"
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 container-fluid"
       >
-        <p class="col-md-4 mb-0 text-muted">
+        <p class="text-white mb-0">
           © 2022-2024 BruTech Computer (Developed by Nick & Dan Brunner)
         </p>
-        <a
-          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-light text-decoration-none"
-          href="index.html"
-          ><img src="assets/images/BT_Logo.png" height="50px"
-        /></a>
-        <ul class="nav col-md-4 justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link px-2 text-muted" href="index.html#top">Top</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-2 text-muted" href="index.html#services"
-              >Services</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-2 text-muted" href="index.html#about"
-              >About</a
-            >
-          </li>
-        </ul>
       </footer>
     </container>
+    <button id="scrollTopButton" class="button-back-to-top" style="display: block;" onclick="scrollToTop()"
+      <i class="arrow text-green fa-solid fa-angle-down py-0 my-0" aria-hidden="true"></i>
+    </button>
   </body>
 </html>
