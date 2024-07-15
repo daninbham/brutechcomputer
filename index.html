@@ -23,8 +23,8 @@
     ></script>
   </head>
 
-  <body class="background-picture" tabindex="0">
-    <container id="top" class="pt-5 mt-5">
+  <body id="top" class="background-picture py-0 my-0" tabindex="0">
+    <container class="pt-5 mt-5">
       <div id="logo-overlay" class="container pt-5 pb-5 mt-5 mb-5 text-center">
         <img
           class="d-block mx-auto mb-0 pb-0"
@@ -65,9 +65,9 @@
               </td>
             </tr>
           </table>
-          <div onclick="scrollToTop()">
+          <div onclick="scrollDown()">
             <i
-              class="arrow text-green fa-solid fa-angle-down py-0 my-0"
+              class="arrow-down fa-solid fa-angle-down py-0 my-0"
               aria-hidden="true"
             ></i>
           </div>
@@ -198,8 +198,12 @@
         </p>
       </footer>
     </container>
-    <button id="scrollTopButton" class="button-back-to-top" style="display: block;" onclick="scrollToTop()"
-      <i class="arrow text-green fa-solid fa-angle-down py-0 my-0" aria-hidden="true"></i>
-    </button>
+    <div onclick="scrollToTop()">
+      <i
+        id="arrowTop"
+        class="arrow-top fa-solid fa-angle-up py-0 my-0"
+        aria-hidden="true"
+      ></i>
+    </div>
   </body>
 </html>

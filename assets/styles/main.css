@@ -7,6 +7,20 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  box-shadow: 0 3000px rgba(165, 165, 165, 0.5) inset;
+}
+
+#background-overlay {
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(133, 133, 133, 0.9);
+  z-index: 2;
+  cursor: pointer;
 }
 
 #logo-overlay {
@@ -86,31 +100,32 @@ html {
   font-weight: 900;
 }
 
-.fa-angle-down:before {
-  content: "\f107";
-}
-
-.button-back-to-top {
+.arrow-top {
   display: none;
+  animation: bouncing 1.5s infinite ease-in-out;
   position: fixed;
+  font-weight: 900;
+  font-size: 3rem;
   bottom: 10px;
   right: 10px;
-  z-index: 99;
   padding: 8px;
-  background: #00ba00;
-  color: black;
+  color: #00ba00;
   cursor: pointer;
-  border-radius: 5px;
-  border: none;
-  font-size: 4.5rem;
+  opacity: 0;
 }
 
-.arrow {
-  animation: bouncing 1s infinite ease-in-out;
+.arrow-top.show {
+  display: block;
+  opacity: 1;
+}
+
+.arrow-down {
+  animation: bouncing 1.5s infinite ease-in-out;
   position: relative;
   font-weight: 900;
   font-size: 3rem;
   bottom: 0;
   padding: 32px;
+  color: #00ba00;
   cursor: pointer;
 }
