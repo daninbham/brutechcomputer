@@ -5,11 +5,18 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
+  const scrollLimit = 300;
   const arrowTop = document.getElementById("arrowTop");
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  const arrowDown = document.getElementById("arrowDown");
+  if (
+    document.body.scrollTop > scrollLimit ||
+    document.documentElement.scrollTop > scrollLimit
+  ) {
     arrowTop.classList.add("show");
+    arrowDown.classList.remove("show");
   } else {
     arrowTop.classList.remove("show");
+    arrowDown.classList.add("show");
   }
 }
 
