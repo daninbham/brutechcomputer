@@ -1,24 +1,34 @@
 const sections = document.querySelectorAll("section");
-const navLi = document.querySelectorAll("nav .container ul li");
-window.onscroll = () => {
-  var current = "";
 
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    if (pageYOffset >= sectionTop - 60) {
-      current = section.getAttribute("id");
-    }
-  });
-
-  navLi.forEach((li) => {
-    li.classList.remove("active");
-    if (li.classList.contains(current)) {
-      li.classList.add("active");
-    }
-  });
+window.onscroll = function () {
+  scrollFunction();
 };
 
-export function sendMail(req, res) {
+function scrollFunction() {
+  const scrollLimit = 300;
+  const arrowTop = document.getElementById("arrowTop");
+  const arrowDown = document.getElementById("arrowDown");
+  if (
+    document.body.scrollTop > scrollLimit ||
+    document.documentElement.scrollTop > scrollLimit
+  ) {
+    arrowTop.classList.add("show");
+    arrowDown.classList.remove("show");
+  } else {
+    arrowTop.classList.remove("show");
+    arrowDown.classList.add("show");
+  }
+}
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function scrollDown() {
+  document.getElementById("services").scrollIntoView();
+}
+
+function sendMail(req, res) {
   let message =
     req.query.message || req.body.message || "BruTech Contact Request";
   res.status(200).send(message);
