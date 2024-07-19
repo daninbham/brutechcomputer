@@ -126,7 +126,7 @@ html {
 }
 
 .arrow-top.show {
-  display: block;
+  display: inline-block;
   opacity: 1;
 }
 
@@ -144,8 +144,21 @@ html {
 }
 
 .arrow-down.show {
-  display: block;
+  display: inline-block;
   opacity: 1;
+}
+
+.textarea {
+  border: 0 none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  resize: none;
+}
+
+input[type="text"] {
+  border: 0 none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
 input[type="submit"] {

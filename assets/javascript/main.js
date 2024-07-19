@@ -8,10 +8,7 @@ function scrollFunction() {
   const scrollLimit = 300;
   const arrowTop = document.getElementById("arrowTop");
   const arrowDown = document.getElementById("arrowDown");
-  if (
-    document.body.scrollTop > scrollLimit ||
-    document.documentElement.scrollTop > scrollLimit
-  ) {
+  if (document.body.scrollTop > scrollLimit || document.documentElement.scrollTop > scrollLimit) {
     arrowTop.classList.add("show");
     arrowDown.classList.remove("show");
   } else {
@@ -26,10 +23,4 @@ function scrollToTop() {
 
 function scrollDown() {
   document.getElementById("services").scrollIntoView();
-}
-
-function sendMail(req, res) {
-  let message =
-    req.query.message || req.body.message || "BruTech Contact Request";
-  res.status(200).send(message);
 }
