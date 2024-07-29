@@ -79,6 +79,11 @@ html {
   color: #ffffff;
 }
 
+.cc-text-white {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 @keyframes bouncing {
   0% {
     bottom: 0;
