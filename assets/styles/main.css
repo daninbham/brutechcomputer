@@ -79,9 +79,10 @@ html {
   color: #ffffff;
 }
 
-.cc-text-white {
+.cc-text {
   color: #ffffff;
   text-decoration: none;
+  margin-left: 10px;
 }
 
 @keyframes bouncing {
